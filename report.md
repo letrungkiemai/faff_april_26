@@ -59,7 +59,7 @@ But on multiple years span it looks like there's no perf difference between part
 Performance on the partitioned table is worse if performing scan on all partitions.
 
 ## Conclusion
-1. For shorter timespan, indexing the creation_date column is enough for performance gain.
+1. For shorter timespan, indexing the creation_date column is enough for performance gain. If querying only happens within a single partition, then partitioning can give a significant performance gain.
 
 2. For longer timespan (within a couple of years), partitioning can give a slight performance gain.
 
